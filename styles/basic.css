@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "serif";
+  background-color: blue;
+}
+
+body {
+  margin: 1em 5em;
+  background-color: aqua;
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  font-style: italic;
+}
+
+header img {
+  border-radius: 25%;
+  max-width: 25%;
+  max-height: 5%;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  background-color: yellowgreen;
+  /* Solution: Set nav <a> elements to display: block so they span
+  the full width of their <li> element parents */
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
