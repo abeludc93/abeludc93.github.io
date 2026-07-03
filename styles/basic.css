@@ -77,9 +77,15 @@ main section {
   margin-bottom: 40px;
 }
 
-section h2 {
+main > section > h2 {
   text-align: end;
   margin-top: 10px;
+}
+
+main > section > p {
+  font-style: italic;
+  text-align: end;
+  margin-top: 0;
 }
 
 section article {
@@ -128,4 +134,26 @@ footer a {
 
 footer a:visited {
   color: darkblue;
+}
+
+/*Tablas*/
+table.bookmark-table {
+  width: 100%;
+  border-collapse: collapse; /* Quita el doble borde por defecto de HTML */
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+table.bookmark-table th {
+  border-bottom: 1px dashed;
+  text-align: center;
+  vertical-align: top;
+}
+
+table.bookmark-table td:first-child {
+  width: 30%;
+}
+
+table td {
+  padding: 5px 10px;
 }
