@@ -4,16 +4,21 @@
     <meta charset="utf-8" />
     <meta name="author" content="Abel Pampín Rodríguez" />
     <meta name="description" content="Personal web page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Abel's Home Page</title>
     <link href="./styles/basic.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <img src="./images/eu.jpg" alt="Profile picture" />
-      <h1>Abel Pampín Rodríguez</h1>
+      <div class="profile">
+        <img src="./images/eu.jpg" alt="Profile picture" />
+        <h1>Abel Pampín Rodríguez</h1>
+      </div>
       <nav>
         <ul>
-          <li><a href="#">Posts</a></li>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
           <li><a href="bookmarks.html">Interesting Bookmarks</a></li>
           <li><a href="resources.html">Books & Resources</a></li>
           <li><a href="random.html">Random Stuff</a></li>
@@ -23,21 +28,24 @@
       </nav>
     </header>
     <main>
-      <article>
-        <header>Web Page Up!</header>
-        <section>
-          Today I'm uploading my home page into <strong>GitHub Pages</strong>.
-          It's a long way off and a
-          <abbr title="Work In Progress">WIP</abbr> that will serve as my
-          personal <em>web laboratory</em>, and where I can ramble on about my
-          hobbies, my favourite places on the <em>Web</em>, a curated list of
-          recommendend books, resources and links for self-taught enthuasists on
-          <em>math-physics-ml-dl</em>, and <strong>much more</strong>!
-        </section>
-        <footer>
-          <span>Date: <time datetime="2026-06-26">June 17 2026</time></span>
-        </footer>
-      </article>
+      <section class="latest-posts">
+        <h2>Recent Writing</h2>
+        <article>
+          <h3><a href="#">Web Page Up!</a></h3>
+          <p>
+            Today I'm uploading my home page into <strong>GitHub Pages</strong>.
+            It's a long way off and a
+            <abbr title="Work In Progress">WIP</abbr> that will serve as my
+            personal <em>web laboratory</em>, and where I can ramble on about my
+            hobbies, my favourite places on the <em>Web</em>, a curated list of
+            recommendend books, resources and links for self-taught enthuasists
+            on <em>math-physics-ml-dl</em>, and <strong>much more</strong>!
+          </p>
+          <span class="article-footer"
+            >Date: <time datetime="2026-06-26">June 17 2026</time></span
+          >
+        </article>
+      </section>
     </main>
     <footer>
       <a href="">GitHub</a>
@@ -45,6 +53,8 @@
       <a href="">LinkedIn</a>
       /
       <a href="mailto:abel.pampin@udc.es">abel.pampin@udc.es</a>
+      /
+      <a href="mailto:abelpampin@gmail.com">abelpampin@gmail.com</a>
       /
       <span>Last updated: <time datetime="2026-06-26">June 17 2026</time></span>
     </footer>
