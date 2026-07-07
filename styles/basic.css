@@ -179,3 +179,37 @@ details[open] summary {
   border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
 }
+
+/*Hobbies*/
+article.hobby-entry {
+  margin-bottom: 40px;
+}
+
+hr.hobby-divider {
+  margin: 40px 0;
+}
+
+/*Carrusel fotos, videos, etc*/
+div.css-carousel {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  /*barra scroll*/
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+/* Multimedia carrusel */
+div.css-carousel img,
+div.css-carousel video,
+div.css-carousel iframe {
+  scroll-snap-align: center; /* centrar al soltar el scroll en el elemento correspondiente */
+  flex: 0 0 90%; /* elemento ocupa el 90% del ancho */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border: 1px solid #333; /* Borde oscuro y austero */
+  border-radius: 20px;
+}
