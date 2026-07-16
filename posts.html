@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Post Render Laboratory</title>
+    <link href="styles/basic.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+
+    <main>
+      <article id="markdown-content">Loading article...</article>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. Buscamos el archivo de texto plano (.md) mediante Fetch
+        fetch('articles/mi-articulo.md')
+          .then(response => response.text())
+          .then(markdownText => {
+            
+            // 2. Primero convertimos el Markdown a HTML estructurado
+            const rawHtml = marked.parse(markdownText);
+            
+            // 3. Inyectamos ese HTML en nuestro contenedor
+            const container = document.getElementById('markdown-content');
+            container.innerHTML = rawHtml;
+            
+            // 4. Invocamos a KaTeX para que busque fórmulas ($...$ o $$...$$) 
+            // instaladas en el HTML ya renderizado y las dibuje matemáticamente
+            renderMathInElement(container, {
+              delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+          })
+          .catch(err => {
+            document.getElementById('markdown-content').innerText = "Error loading article.";
+            console.error(err);
+          });
+      });
+    </script>
+  </body>
+</html>
