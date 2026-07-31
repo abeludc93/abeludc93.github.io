@@ -10,24 +10,8 @@
     <link href="styles/basic.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="subpage-header">
-      <div class="profile-mini">
-        <h1><a href="index.html">Abel Pampín Rodríguez</a></h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="posts.html">Posts</a></li>
-          <li><a href="bookmarks.html">Interesting Bookmarks</a></li>
-          <li><a href="resources.html">Books & Resources</a></li>
-          <li><a href="random.html">Random Stuff</a></li>
-          <li><a href="#" aria-current="page">Resume</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <main>
+      <!-- Encabezado -->
       <section>
         <h2>Abel Pampín Rodríguez</h2>
         <p>
@@ -36,127 +20,154 @@
           <a href="mailto:abel.pampin@udc.es">abel.pampin@udc.es</a>
         </p>
       </section>
-      <section>
-        <h3>Education</h3>
-        <table style="width: 100%; border-collapse: collapse">
-          <tr>
-            <td style="width: 20%; vertical-align: top; padding-bottom: 10px">
-              <strong>[Year]</strong>
-            </td>
-            <td style="vertical-align: top; padding-bottom: 10px">
-              <strong>M.Sc. in Industrial Mathematics (M2I)</strong><br />
-              Universidade da Coruña (UDC)<br />
-              <em
-                >Specialization in Numerical Simulation and Applied
-                Mathematics.</em
-              >
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; padding-bottom: 10px">
-              <strong>[Year]</strong>
-            </td>
-            <td style="vertical-align: top; padding-bottom: 10px">
-              <strong>Degree in Data Science and Engineering</strong><br />
-              Universidade da Coruña (UDC)<br />
-              <em
-                >Foundational studies in statistics, machine learning, and
-                software architecture.</em
-              >
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h3>Education</h3>
+
+      <!-- Experiencia -->
+      <section class="resume">
+        <h3>Professional Employment</h3>
         <dl>
-          <dt><strong>M.Sc. in Industrial Mathematics (M2I)</strong></dt>
-          <dd>Universidade da Coruña (UDC) &middot; <em>[Year]</em></dd>
+          <dt>
+            <strong>Research Assistant @ LIDIA Group</strong> | CITIC-UDC
+            &middot; <em>2025-present</em>
+          </dt>
           <dd>
-            Specialization in Numerical Simulation and Applied Mathematics.
+            Lead developer on the European project AQUAPRED: development and
+            deployment of AI modules for prediction, anomaly detection and
+            control of thermal waters in associated spas.
+          </dd>
+          <dd>
+            Algorithmic research: applied to Federated Learning scenarios, with
+            the adaptation of an ensemble of linear models to the
+            <abbr title="Horizontal Federated Learning">HFL</abbr> case
+            (FedHEONN), and the development of an equivalent solution on the
+            <abbr title="Vertical Federated Learning">VFL</abbr> case (BCD
+            ROLANN).
           </dd>
 
-          <dt><strong>Degree in Data Science and Engineering</strong></dt>
-          <dd>Universidade da Coruña (UDC) &middot; <em>[Year]</em></dd>
+          <dt>
+            <strong>Senior Software Engineer</strong> | Altia (IT Consultancy)
+            &middot; <em>2018-2023</em>
+          </dt>
           <dd>
-            Foundational studies in statistics, machine learning, and software
-            architecture.
+            Development of the W@nda integrated digital administration platform
+            (Xunta de Galicia / AMTEGA).
+          </dd>
+          <dd>
+            Maintenance, development, and operation of databases for large-scale
+            public platforms (SXPA, SICAS).
           </dd>
         </dl>
       </section>
 
-      <section>
-        <h3>Experience</h3>
+      <!-- Educacion -->
+      <section class="resume">
+        <h3>Education</h3>
         <dl>
-          <dt><strong>Data Scientist / Developer</strong></dt>
+          <dt>
+            <strong>M.Sc. in Industrial Mathematics (M2I)</strong> |
+            Universidade da Coruña (UDC) &middot; <em>2024-2025</em>
+          </dt>
           <dd>
-            Public Administration Projects / Consulting &middot;
-            <em>[Dates]</em>
+            Specialization in Numerical Simulation and Modelling. Average grade:
+            8.5
           </dd>
           <dd>
-            <ul>
-              <li>
-                Designed and implemented data pipelines and structured software
-                systems for public entities.
-              </li>
-              <li>
-                Optimized complex database queries and automated reporting
-                systems.
-              </li>
-              <li>
-                Collaborated with multidisciplinary teams ensuring adherence to
-                rigorous software specs.
-              </li>
-            </ul>
+            Master's Thesis:
+            <em>Anomaly detection for thermal water quality control</em>. Grade:
+            9.8
+          </dd>
+
+          <dt>
+            <strong>Bachelor's Degree in Industrial Engineering</strong> |
+            Universidade da Coruña (UDC) &middot; <em>2011-2016</em>
+          </dt>
+          <dd>Specialized in Energy Technologies. Average grade: 7.1</dd>
+          <dd>
+            Bachelor's Thesis:
+            <em
+              >Scalability and efficiency in Artificial Intelligence through
+              green federated algorithms</em
+            >. Grade: 10.0 (Extraordinary End-of-Degree award).
           </dd>
         </dl>
       </section>
 
-      <section>
+      <!-- Publicaciones -->
+      <section class="resume">
+        <h3>Publications</h3>
+        <ul class="publications-list">
+          <li>
+            <strong
+              >Robust Vertical Federated Learning with a One-Layer Neural
+              Network via Iterative Linear Solvers.</strong
+            >
+            <em>(Provisional title)</em> | IEEE Transactions on Knowledge and
+            Data Engineering &middot; <em>pending</em>
+          </li>
+          <li>
+            <strong
+              >Data-Driven Monitoring for Thermal Water Quality Control: Anomaly
+              Detection from Predictive Forecasting in the AQUAPRED
+              Project.</strong
+            >
+            | MDPI Waters &middot; <em>2026</em>
+          </li>
+          <li>
+            <strong
+              >Efficient and Secure Federated Learning with Ensemble of
+              One-Layer Neural Networks.</strong
+            >
+            | IJCNN &middot; <em>2025</em>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Stack -->
+      <section class="resume">
         <h3>Technical Skills</h3>
         <ul>
           <li>
-            <strong>Languages:</strong> Python, R, SQL, C, HTML/CSS/JavaScript.
+            <strong>Languages:</strong> Python, Java, SQL, C,
+            HTML/CSS/JavaScript.
           </li>
           <li>
-            <strong>Data Science & ML:</strong> Scikit-Learn, PyTorch, Pandas,
-            NumPy, Data Pipelines.
+            <strong>Data Science &amp; ML:</strong> Scikit-Learn, PyTorch,
+            Pandas, NumPy, ETL Data Pipelines.
           </li>
           <li>
             <strong>Applied Math:</strong> Numerical Methods, Mathematical
             Modelling, Calculus, Linear Algebra.
           </li>
           <li>
-            <strong>Tools:</strong> Git, Linux environments, VirtualBox (Legacy
-            OS environments).
+            <strong>Tools:</strong> Git, Linux environments, Virtualization.
           </li>
         </ul>
       </section>
 
-      <section>
-        <h3>Interests & Projects</h3>
+      <!-- Otros -->
+      <section class="resume">
+        <h3>Interests &amp; Projects</h3>
         <ul>
           <li>
-            <strong>Digital Garden:</strong> Building and maintaining a
-            resilient, minimalist web presence.
+            <strong>Aviation:</strong> Everything regarding flight simulation,
+            RC model planes, etc.
           </li>
           <li>
-            <strong>Flight Simulation:</strong> Flight dynamics simulation and
-            telemetry tracking.
-          </li>
-          <li>
-            <strong>Retro Computing:</strong> Legacy operating systems
-            engineering and virtualization (Windows 9x/2000 setups).
+            <strong>Digital Archeologist:</strong> Exploring old and abandonded
+            software and websites, retro-computing and general internet archive
+            enthuasist.
           </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <a href="">GitHub</a> / <a href="">LinkedIn</a> /
+      <a href="https://github.com/abeludc93/">GitHub</a> /
+      <a href="https://www.linkedin.com/in/abelpr">LinkedIn</a> /
       <a href="mailto:abel.pampin@udc.es">abel.pampin@udc.es</a> /
       <a href="mailto:abelpampin@gmail.com">abelpampin@gmail.com</a> /
-      <span>Last updated: <time datetime="2026-07-07">July 7 2026</time></span>
+      <span
+        >Last updated: <time datetime="2026-07-03">July 31, 2026</time></span
+      >
     </footer>
   </body>
 </html>

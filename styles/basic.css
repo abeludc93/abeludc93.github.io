@@ -213,3 +213,10 @@ div.css-carousel iframe {
   border: 1px solid #333; /* Borde oscuro y austero */
   border-radius: 20px;
 }
+
+/*CV*/
+section.resume > h3 {
+  border: 1px solid black;
+  padding: 0.2rem;
+  text-align: center;
+}
