@@ -220,3 +220,8 @@ section.resume > h3 {
   padding: 0.2rem;
   text-align: center;
 }
+
+section.resume dd,
+li {
+  padding: 0.2em 0em;
+}
