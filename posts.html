@@ -26,28 +26,22 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="catalog-header">
         <h2>Post Catalog:</h2>
-        
         <!-- Filtros categorias-->
-        <div class="filter-buttons">
-        <label for="filter">Filter by topic: </label>
-        <!--
-        <button onclick="filterPosts('all')">Todos</button>
-        <button onclick="filterPosts('ml')">Machine Learning</button>
-        <button onclick="filterPosts('hobbies')">Hobbies</button>
-        <bu∫tton onclick="filterPosts('opinion')">Opinión</button>
-        -->
+        <div id="filter-buttons">
+          <span>Filter by topic: </span>
+          <button onclick="filterPosts('all')">All</button>
         </div>  
       </section>
-      
       <!--Catalogo dinamico-->
-      <section id="post-grid" class="posts-grid">
+      <section id="posts-grid" class="posts-grid">
         <p>Loading post catalog ...</p>
       </section>
-    
     </main>
+
     <footer>
       <a href="https://github.com/abeludc93/">GitHub</a> /
       <a href="https://www.linkedin.com/in/abelpr">LinkedIn</a> /
@@ -57,5 +51,7 @@
         >Last updated: <time datetime="2026-07-03">July 31, 2026</time></span
       >
     </footer>
+
+    <script>initCatalog();</script>
   </body>
 </html>
