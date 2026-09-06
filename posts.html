@@ -2,50 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Post Render Laboratory</title>
-    <link href="styles/basic.css" rel="stylesheet" />
+    <meta name="author" content="Abel Pampín Rodríguez" />
+    <meta name="description" content="Personal Web page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Recent Posts</title>
+    <link href="/styles/basic.css" rel="stylesheet" />
+    <script src="/js/render.js"></script>
   </head>
   <body>
 
-    <main>
-      <article id="markdown-content">Loading article...</article>
-    </main>
+    <header>
+      <div class="profile">
+        <img src="/images/eu.jpg" alt="Profile picture" />
+        <h1>Abel Pampín Rodríguez</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" aria-current="page">Posts</a></li>
+          <li><a href="bookmarks.html">Interesting Bookmarks</a></li>
+          <li><a href="cv.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // 1. Buscamos el archivo de texto plano (.md) mediante Fetch
-        fetch('articles/mi-articulo.md')
-          .then(response => response.text())
-          .then(markdownText => {
-            
-            // 2. Primero convertimos el Markdown a HTML estructurado
-            const rawHtml = marked.parse(markdownText);
-            
-            // 3. Inyectamos ese HTML en nuestro contenedor
-            const container = document.getElementById('markdown-content');
-            container.innerHTML = rawHtml;
-            
-            // 4. Invocamos a KaTeX para que busque fórmulas ($...$ o $$...$$) 
-            // instaladas en el HTML ya renderizado y las dibuje matemáticamente
-            renderMathInElement(container, {
-              delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false}
-              ],
-              throwOnError : false
-            });
-          })
-          .catch(err => {
-            document.getElementById('markdown-content').innerText = "Error loading article.";
-            console.error(err);
-          });
-      });
-    </script>
+    <!-- Botones de filtro -->
+    <div class="filter-buttons">
+    <button onclick="filterPosts('all')">Todos</button>
+    <button onclick="filterPosts('ml')">Machine Learning</button>
+    <button onclick="filterPosts('hobbies')">Hobbies</button>
+    <button onclick="filterPosts('opinion')">Opinión</button>
+    </div>
+
+    <!-- Lista de publicaciones -->
+    <div class="posts-grid">
+
+      <article class="post-card" data-category="ml">
+        <h3>Predicción de series temporales</h3>
+        <p>Resumen breve de la entrada...</p>
+        <a href="reader.html/post=forecasting">Leer más</a>
+      </article>
+
+      <article class="post-card" data-category="hobbies">
+        <h3>Mi configuración de setup o hobby</h3>
+        <p>Resumen breve...</p>
+        <a href="reader.html?post=mi-articulo">Leer más</a>
+      </article>
+    </div>
+    
+
   </body>
 </html>

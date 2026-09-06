@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Abel Pampín Rodríguez" />
+    <meta name="description" content="Personal Web page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="/styles/basic.css" rel="stylesheet" />
+    <script src="js/render.js"></script>
+    <title>Loading Post ...</title>
+
+    <!--MarkDown/LaTeX-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img src="/images/eu.jpg" alt="Profile picture" />
+        <h1>Abel Pampín Rodríguez</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="posts.html" aria-current="page">Posts</a></li>
+          <li><a href="bookmarks.html">Interesting Bookmarks</a></li>
+          <li><a href="cv.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <article id="markdown-content">
+        <p>Loading article...</p>
+      </article>
+    </main>
+
+    <script>
+      initRender();
+    </script>
+  </body>
+</html>
