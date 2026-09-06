@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Federated Learning with ROLANN",
+    "description": "Overview of the HFL and VFL capabilities of the ROLANN model - a one-layer neural network.",
+    "file": "federated-rolann",
+    "date": "2026-09-29",
+    "categories": ["Machine Learning", "Research"],
+    "thumbnail": ""
+  },
+  {
+    "title": "Funcionamiendo del sistema de posts en mi página web.",
+    "description": "Cómo he implementado un CMS casero usando JS y librerías de renderizado de Markdown y LaTeX.",
+    "file": "setup-posts",
+    "date": "2026-09-06",
+    "categories": ["Hobbies", "Web"],
+    "thumbnail": "images/thumb-posts.jpg"
+  }
+]

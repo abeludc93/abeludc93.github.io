@@ -26,31 +26,36 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Botones de filtro -->
-    <div class="filter-buttons">
-    <button onclick="filterPosts('all')">Todos</button>
-    <button onclick="filterPosts('ml')">Machine Learning</button>
-    <button onclick="filterPosts('hobbies')">Hobbies</button>
-    <button onclick="filterPosts('opinion')">Opinión</button>
-    </div>
-
-    <!-- Lista de publicaciones -->
-    <div class="posts-grid">
-
-      <article class="post-card" data-category="ml">
-        <h3>Predicción de series temporales</h3>
-        <p>Resumen breve de la entrada...</p>
-        <a href="reader.html/post=forecasting">Leer más</a>
-      </article>
-
-      <article class="post-card" data-category="hobbies">
-        <h3>Mi configuración de setup o hobby</h3>
-        <p>Resumen breve...</p>
-        <a href="reader.html?post=mi-articulo">Leer más</a>
-      </article>
-    </div>
+    <main>
+      <section class="catalog-header">
+        <h2>Post Catalog:</h2>
+        
+        <!-- Filtros categorias-->
+        <div class="filter-buttons">
+        <label for="filter">Filter by topic: </label>
+        <!--
+        <button onclick="filterPosts('all')">Todos</button>
+        <button onclick="filterPosts('ml')">Machine Learning</button>
+        <button onclick="filterPosts('hobbies')">Hobbies</button>
+        <bu∫tton onclick="filterPosts('opinion')">Opinión</button>
+        -->
+        </div>  
+      </section>
+      
+      <!--Catalogo dinamico-->
+      <section id="post-grid" class="posts-grid">
+        <p>Loading post catalog ...</p>
+      </section>
     
-
+    </main>
+    <footer>
+      <a href="https://github.com/abeludc93/">GitHub</a> /
+      <a href="https://www.linkedin.com/in/abelpr">LinkedIn</a> /
+      <a href="mailto:abel.pampin@udc.es">abel.pampin@udc.es</a> /
+      <a href="mailto:abelpampin@gmail.com">abelpampin@gmail.com</a> /
+      <span
+        >Last updated: <time datetime="2026-07-03">July 31, 2026</time></span
+      >
+    </footer>
   </body>
 </html>
