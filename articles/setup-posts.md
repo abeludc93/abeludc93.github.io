@@ -8,11 +8,27 @@ Donde $m$ representa el número de muestras del dataset.
 
 Test imagen:
 
-![test](images/img-post.png)
+![Mi descripción -full -img](images/img-post.png)
+
+Sigo por aqui hablando....
 
 
-Test pdf:
+---
 
-<div class="embedded-pdf">
-    <iframe src="images/document.pdf"></iframe>
-</div>
+
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+
+
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+
+
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+ASDASDASASDASDASASDASDASASDASDASASDASDASASDASDAS
+
+---
+1.
+2.
+3.
