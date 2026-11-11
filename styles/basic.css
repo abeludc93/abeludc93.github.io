@@ -208,6 +208,13 @@ li {
   margin-right: 1rem;
 }
 
+div#filter-buttons button {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid black;
+  margin-inline-start: 0.5rem;
+}
+
 /*Lector de posts*/
 img[alt$="-img"] {
   display: block;
